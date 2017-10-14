@@ -39,7 +39,7 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
 
 def NOTIFIED_ADD_CONTACT(op):
     try:
-        sendMessage(op.param1, client.getContact(op.param1).displayName + "Thanks for add")
+        sendMessage(op.param1, client.getContact(op.param1).displayName + "Makasih udah di invite.. Salam kenal semuanya")
     except Exception as e:
         print e
         print ("\n\nNOTIFIED_ADD_CONTACT\n\n")
@@ -70,7 +70,7 @@ tracer.addOpInterrupt(19,NOTIFIED_KICKOUT_FROM_GROUP)
 
 def NOTIFIED_LEAVE_GROUP(op):
     try:
-        sendMessage(op.param1, client.getContact(op.param2).displayName + " Good Bye\n(*´･ω･*)")
+        sendMessage(op.param1, client.getContact(op.param2).displayName + " Dadah\nmoga tenang di alam sana")
     except Exception as e:
         print e
         print ("\n\nNOTIFIED_LEAVE_GROUP\n\n")
