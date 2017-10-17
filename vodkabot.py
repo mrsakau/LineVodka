@@ -39,7 +39,7 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
 
 def NOTIFIED_ADD_CONTACT(op):
     try:
-        sendMessage(op.param1, client.getContact(op.param1).displayName + "Makasih udah di invite.. Salam kenal semuanya")
+        sendMessage(op.param1, client.getContact(op.param1).displayName + "Makasih udah di add.. Salam kenal ya")
     except Exception as e:
         print e
         print ("\n\nNOTIFIED_ADD_CONTACT\n\n")
